@@ -44,10 +44,10 @@
         justify-self: center;
         rotate: 90deg;
         z-index: 0;
-        margin-top: 30px;
-        display: none;
+        
+        align-self: center;
         @include short{
-            display: block;
+            margin-top: 70px;
         }
     }
     &__title{
@@ -64,7 +64,10 @@
         }
     }
     &__info{
-        color: rgb(2, 2, 2);
+        font-size: 1.2rem;
+        background: linear-gradient(180deg, rgba(10,210,173,0.5816526439677434) 15%, rgba(10,210,173,0.7021008232394521) 46%, rgba(10,210,173,0.6936974618949142) 100%);
+        font-weight: 700;
+        color: rgb(255, 255, 255);
         text-align: center;
         padding: 5px;
         z-index: 20;

@@ -67,12 +67,11 @@
   justify-self: center;
   rotate: 90deg;
   z-index: 0;
-  margin-top: 30px;
-  display: none;
+  align-self: center;
 }
 @media (min-width: 512px) {
   .banner__flecha {
-    display: block;
+    margin-top: 70px;
   }
 }
 .banner__title {
@@ -93,7 +92,10 @@
   }
 }
 .banner__info {
-  color: rgb(2, 2, 2);
+  font-size: 1.2rem;
+  background: linear-gradient(180deg, rgba(10, 210, 173, 0.581652644) 15%, rgba(10, 210, 173, 0.7021008232) 46%, rgba(10, 210, 173, 0.6936974619) 100%);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 5px;
   z-index: 20;
