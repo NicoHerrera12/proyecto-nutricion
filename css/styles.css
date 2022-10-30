@@ -4,7 +4,6 @@
 }
 
 .header {
-  background-color: #0ad2ad;
   font-size: 1.2rem;
 }
 .header__img {
@@ -14,11 +13,123 @@
 }
 .header__i {
   font-size: 25px;
+  color: #0ad2ad;
 }
 
-.navbar {
+.banner {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   background-color: #0ad2ad;
+  border-radius: 50px;
 }
+@media (min-width: 512px) {
+  .banner {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 10% 40% 10% 40%;
+    grid-template-areas: "title title img img" "info info img img";
+    align-items: center;
+  }
+}
+.banner__icon {
+  width: 65px;
+  rotate: -30deg;
+  grid-area: img;
+  grid-column: 4/5;
+  margin-bottom: 200px;
+  display: none;
+}
+@media (min-width: 512px) {
+  .banner__icon {
+    display: block;
+  }
+}
+.banner__patron {
+  width: 100px;
+  grid-area: img;
+  grid-column: 4/5;
+  z-index: 0;
+  margin-top: 60px;
+  display: none;
+}
+@media (min-width: 512px) {
+  .banner__patron {
+    display: block;
+  }
+}
+.banner__flecha {
+  width: 100px;
+  grid-area: info;
+  grid-column: 2/3;
+  justify-self: center;
+  rotate: 90deg;
+  z-index: 0;
+  margin-top: 30px;
+  display: none;
+}
+@media (min-width: 512px) {
+  .banner__flecha {
+    display: block;
+  }
+}
+.banner__title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+@media (min-width: 512px) {
+  .banner__title {
+    grid-area: title;
+    grid-column: 2/3;
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .banner__title {
+    font-size: 4rem;
+  }
+}
+.banner__info {
+  color: rgb(2, 2, 2);
+  text-align: center;
+  padding: 5px;
+  z-index: 20;
+}
+@media (min-width: 512px) {
+  .banner__info {
+    grid-area: info;
+    grid-column: 2/3;
+  }
+}
+.banner__img {
+  width: 200px;
+  border-radius: 100%;
+  align-self: center;
+  z-index: 10;
+}
+@media (min-width: 512px) {
+  .banner__img {
+    width: 215px;
+    border-radius: 50px;
+    background-color: none;
+    grid-area: img;
+    grid-column: 4/5;
+  }
+}
+@media (min-width: 768px) {
+  .banner__img {
+    width: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  .banner__img {
+    width: 400px;
+  }
+}
+
 .navbar-toggler {
   padding: 4px 6px;
 }

@@ -1,5 +1,4 @@
 .header{
-    background-color: $color-primario;
     font-size: 1.2rem;
     &__img{
         width: 100px;
@@ -8,5 +7,6 @@
     }
     &__i{
         font-size: 25px;
+        color: $color-primario;
     }
 }

@@ -1,0 +1,96 @@
+.banner{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primario;
+    border-radius: 50px;
+    @include short{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 10% 40% 10% 40%;
+        grid-template-areas:
+        "title title img img"
+        "info info img img";
+        align-items: center;
+    }
+    &__icon{
+        width: 65px;
+        rotate: -30deg;
+        grid-area: img;
+        grid-column: 4/5;
+        margin-bottom: 200px;
+        display: none;
+        @include short{
+            display: block;
+        }
+    }
+    &__patron{
+        width: 100px;
+        grid-area: img;
+        grid-column: 4/5;
+        z-index: 0;
+        margin-top: 60px;
+        display: none;
+        @include short{
+            display: block;
+        }
+    }
+    &__flecha{
+        width: 100px;
+        grid-area: info;
+        grid-column: 2/3;
+        justify-self: center;
+        rotate: 90deg;
+        z-index: 0;
+        margin-top: 30px;
+        display: none;
+        @include short{
+            display: block;
+        }
+    }
+    &__title{
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        @include short{
+            grid-area: title;
+            grid-column: 2/3;
+            font-size: 3.5rem;
+        }
+        @include large{
+            font-size: 4rem;
+        }
+    }
+    &__info{
+        color: rgb(2, 2, 2);
+        text-align: center;
+        padding: 5px;
+        z-index: 20;
+        @include short{
+            grid-area: info;
+            grid-column: 2/3;
+        }
+    }
+    &__img{
+        width: 200px;
+        
+        border-radius: 100%;
+        align-self: center;
+        z-index: 10;
+        @include short{
+            width: 215px;
+            border-radius: 50px;
+            background-color: none;
+            grid-area: img;
+            grid-column: 4/5;
+        }
+        @include medium{
+            width: 300px;
+        }
+        @include large{
+            width: 400px;
+        }
+    }
+}

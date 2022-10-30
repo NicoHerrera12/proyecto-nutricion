@@ -1,5 +1,6 @@
 // UTILS
 @import "./utils/variables";
+@import "./utils/mixins";
 
 // BASE
 @import "./base/reset";
@@ -7,6 +8,7 @@
 // LAYOUT
 
 @import "./layout/header";
+@import "./layout/banner";
 
 // COMPONENTS
 
